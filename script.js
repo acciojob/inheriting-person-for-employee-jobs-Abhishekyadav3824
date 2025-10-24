@@ -8,12 +8,12 @@ Person.prototype.greet = function () {
 };
 
 function Employee(name, age, jobTitle) {
-  // Inherit name and age from Person
+  // call Person constructor to initialize name and age
   Person.call(this, name, age);
   this.jobTitle = jobTitle;
 }
 
-// Set up inheritance
+// inherit from Person
 Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 
