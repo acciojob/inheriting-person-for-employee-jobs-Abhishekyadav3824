@@ -11,7 +11,7 @@ class Person {
 
 class Employee extends Person {
   constructor(name, age, jobTitle) {
-    super(name, age); // call the parent constructor
+    super(name, age); // Call parent constructor
     this.jobTitle = jobTitle;
   }
 
@@ -22,6 +22,6 @@ class Employee extends Person {
   }
 }
 
-// Do not change code below this line
+// Do not change the code below this line
 window.Person = Person;
 window.Employee = Employee;
